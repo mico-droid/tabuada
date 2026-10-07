@@ -1,5 +1,4 @@
 {
-  "id": "./",
   "name": "Batalha da Tabuada / Times Table Battle",
   "short_name": "Tabuada",
   "description": "Jogo de tabuada e contas para crianças e adolescentes. Times table math game.",
@@ -34,5 +33,6 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "prefer_related_applications": false
 }
