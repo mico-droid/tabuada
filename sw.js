@@ -1,6 +1,6 @@
 // Service worker: permite instalar o app e abrir offline.
-// Ao mudar qualquer arquivo do jogo, aumente CACHE (v5 -> v6) para os aparelhos pegarem a versão nova.
-const CACHE='tabuada-v5';
+// Ao mudar qualquer arquivo do jogo, aumente CACHE (v6 -> v7) para os aparelhos pegarem a versão nova.
+const CACHE='tabuada-v6';
 const FILES=['./','index.html','manifest.json','icons/icon-192.png','icons/icon-512.png','icons/icon-maskable-512.png','icons/apple-touch-icon.png'];
 // um arquivo ausente NÃO pode derrubar a instalação do service worker (senão o navegador não oferece "instalar")
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>Promise.all(FILES.map(f=>c.add(f).catch(()=>{})))).then(()=>self.skipWaiting()))});
